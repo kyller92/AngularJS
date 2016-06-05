@@ -21,6 +21,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.title = 'LILA';
+                    this.tabtest = ['lol', 'lel', 'lil', 'lawl'];
                 }
                 AppComponent = __decorate([
                     core_1.Component({
@@ -35,7 +36,14 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                             '</div>' +
                             '</div>' +
                             'On merite 20/20 !' +
-                            '<h1>Bonjour... Ca marche ?</h1>'
+                            '<h1>Bonjour... Ca marche ?</h1>' +
+                            '<h1>{{title}}</h1>' +
+                            '<p>Tableau:</p>' +
+                            '<ul>' +
+                            '    <li *ngFor="let test of tabtest">' +
+                            '    {{ test }}' +
+                            '</li>' +
+                            '</ul>'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

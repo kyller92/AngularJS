@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 
+
 @Component({
     selector: 'my-app',
     template: '' +
@@ -13,11 +14,19 @@ import {Component} from '@angular/core';
     '</div>' +
 
     'On merite 20/20 !' +
-    '<h1>Bonjour... Ca marche ?</h1>'
+    '<h1>Bonjour... Ca marche ?</h1>'+
+    '<h1>{{title}}</h1>'+
+    '<p>Tableau:</p>'+
+    '<ul>'+
+    '    <li *ngFor="let test of tabtest">'+
+    '    {{ test }}'+
+    '</li>'+
+    '</ul>'
 
 })
 export class AppComponent {
     title = 'LILA';
+    tabtest = ['lol', 'lel', 'lil', 'lawl'];
 }
 
 
