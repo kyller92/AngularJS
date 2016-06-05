@@ -1,6 +1,6 @@
 /**
  * Created by Pathé on 05/06/2016.
- */
+
 
 export class lilaservice {
     private _http = null;
@@ -12,4 +12,4 @@ export class lilaservice {
     getlilas() {
         return Promise.resolve(LILAS);
     }
-}
+}*/

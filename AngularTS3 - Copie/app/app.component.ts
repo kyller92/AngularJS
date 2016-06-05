@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-
+import {Jsonp} from 'angular2/http';
 
 @Component({
     selector: 'my-app',
@@ -25,8 +25,12 @@ import {Component} from '@angular/core';
 
 })
 export class AppComponent {
+
     title = 'LILA';
     tabtest = ['lol', 'lel', 'lil', 'lawl'];
+
 }
+
+
 
 
